@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ProtsakPetro/goit-react-hw-07-phonebook/static/css/main.08a9dd2b.css",
-    "main.js": "/ProtsakPetro/goit-react-hw-07-phonebook/static/js/main.19a4d3b1.js",
+    "main.js": "/ProtsakPetro/goit-react-hw-07-phonebook/static/js/main.6bb94070.js",
     "index.html": "/ProtsakPetro/goit-react-hw-07-phonebook/index.html",
     "main.08a9dd2b.css.map": "/ProtsakPetro/goit-react-hw-07-phonebook/static/css/main.08a9dd2b.css.map",
-    "main.19a4d3b1.js.map": "/ProtsakPetro/goit-react-hw-07-phonebook/static/js/main.19a4d3b1.js.map"
+    "main.6bb94070.js.map": "/ProtsakPetro/goit-react-hw-07-phonebook/static/js/main.6bb94070.js.map"
   },
   "entrypoints": [
     "static/css/main.08a9dd2b.css",
-    "static/js/main.19a4d3b1.js"
+    "static/js/main.6bb94070.js"
   ]
 }
