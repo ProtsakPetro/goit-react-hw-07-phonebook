@@ -9,7 +9,8 @@ import {
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { Notify } from 'notiflix';
-import { addContactAction } from 'redux/contact/slice';
+import { addContactAction } from '../../redux/contact/slice'; 
+
 
 const ContactForm = () => {
   const [name, setName] = useState('');
