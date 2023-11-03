@@ -5,7 +5,7 @@ export const Loader = () => {
     <Oval
       height={80}
       width={80}
-      color="#6658d3"
+      color="#8888"
       wrapperStyle={{
         marginTop: '200px',
         marginLeft: '50%',
