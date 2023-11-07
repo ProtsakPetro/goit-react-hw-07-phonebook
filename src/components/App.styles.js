@@ -5,7 +5,7 @@ export const AppContainer = styled.div`
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.7);
   color: #000;
-  margin: 15px auto;
+  margin: 77px auto;
   padding: 25px;
   width: 1000px;
 `;
