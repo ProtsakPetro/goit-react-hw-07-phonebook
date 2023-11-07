@@ -63,7 +63,7 @@ const INITIAL_STATE = {
           />
         </Label>
         <Label>
-          Phone Number:
+          Phone number:
           <Input
             type="tel"
             name="phone"

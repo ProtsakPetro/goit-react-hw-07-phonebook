@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
-import { AppContainer } from './App.styles'; 
+import { AppContainer } from './App.styles';
 import Notify from 'notifyjs';
+import { useDispatch, useSelector } from 'react-redux';
+import { getError, getIsLoading } from 'store/selectors';
+import { fetchContacts } from 'store/thunk';
 
 const App = () => {
   const [contacts, setContacts] = useState([
@@ -37,12 +40,22 @@ const App = () => {
 
   const filterContacts = getFilterContacts();
 
+  const dispatch = useDispatch();
+  const isLoading = useSelector(getIsLoading);
+  const error = useSelector(getError);
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
+
   return (
     <AppContainer>
       <h1>PHONEBOOK</h1>
       <ContactForm addContactData={addContactData} />
       <h2>CONTACTS</h2>
       <Filter filter={filter} getFilterData={getFilterData} />
+      {isLoading && <b>Please wait...</b>}
+      {error && <b>{error}</b>}
       <ContactList contacts={filterContacts} removeContact={removeContact} getFilterContacts={getFilterContacts} />
     </AppContainer>
   );

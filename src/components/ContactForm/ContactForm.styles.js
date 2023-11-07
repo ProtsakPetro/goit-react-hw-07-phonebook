@@ -9,15 +9,12 @@ export const Label = styled('div')({
 
 export const Input = styled('input')({
   height: 34,
-  border: `0.5px solid `,
-  borderRadius: 10,
+  borderWidth: '0px 0px 2px',
+  borderBottom: '2px, solid, #8597a3',
   padding: 8,
   fontSize: 16,
-  transition: 'boxShadow, easy, 300ms',
+  backgroundColor: 'transparent',
 
-  '&:hover': {
-    boxShadow: `0px 10px 30px 0px `,
-  },
 });
 
 export const Button = styled('button')({
