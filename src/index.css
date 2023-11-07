@@ -1,4 +1,4 @@
-@import-normalize;
+/* @import-normalize; bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -7,7 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #a2a2a2;
 }
 
 code {
@@ -32,19 +31,4 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--border-button-color);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
 }
